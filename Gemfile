@@ -28,6 +28,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Active admin
 gem 'activeadmin', github: 'activeadmin'
 
+gem 'devise'
+gem 'cancan'
+gem 'draper'
+gem 'pundit'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
