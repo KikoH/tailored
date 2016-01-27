@@ -1,4 +1,4 @@
-/* 
+/*
     Created on : 10 Apr, 2015, 1:08:57 PM
     Author     : Design_mylife
     Project    : Bavely - Classy One page Theme
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(../../assets/images/pattern.png);
+  background-image: asset-url('pattern.png');
   background-repeat: repeat;
 }
 
@@ -398,7 +398,7 @@ button {
 
 /***********
 
-SLIDER REVOLUTION 
+SLIDER REVOLUTION
 
 **************/
 .slider-title {
@@ -453,7 +453,7 @@ SLIDER REVOLUTION
 }
 /********
 
-services icons 
+services icons
 
 ********/
 .service-features {
@@ -537,7 +537,7 @@ FUN FACTS
 
 /************
 
-TEAM 
+TEAM
 
 *************/
 .team {
@@ -591,7 +591,7 @@ TEAM
 
 /*********
 
-SERVICES SECTION 
+SERVICES SECTION
 
 ********/
 .services-box {
@@ -653,11 +653,11 @@ SERVICES SECTION
 
 /**************
 
-TESTIMONIALS 
+TESTIMONIALS
 
 *****************/
 .testimonials {
-  background: url(../../assets/images/blog-2.jpg) no-repeat center center;
+  background: asset-url('blog-2.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0;
@@ -928,7 +928,7 @@ ul.filter a:hover, ul.filter a.active, ul.filter a:focus {
 
 /****Twitter feeds****/
 .twitter-feed {
-  background: url(../../assets/images/blog-1.jpg) no-repeat center center;
+  background: asset-url('blog-1.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0;
@@ -982,7 +982,7 @@ ul.filter a:hover, ul.filter a.active, ul.filter a:focus {
 }
 
 .cta-1 {
-  background: url(../../assets/images/bg-3.jpg) no-repeat center center;
+  background: url('bg-3.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0;
@@ -1496,7 +1496,7 @@ HOME V2 - PARALLAX BACKGROUND WITH FLEX TEXT SLIDER
 }
 
 .parallax-bg {
-  background: url(../../assets/images/bg-3.jpg) fixed;
+  background: asset-url('bg-3.jpg') fixed;
   background-size: cover;
   background-position: center top;
   background-color: #57b2f8;
