@@ -1,4 +1,4 @@
-/* 
+/*
  * Bavely v1.2
  * Design_mylife
  */
@@ -26,8 +26,8 @@ $(document).ready(function () {
     /*=========================*/
      /*========on hover dropdown navigation====*/
      /*==========================*/
-     
-     
+
+
      $(document).ready(function() {
 
     $('.js-activated').dropdownHover({
@@ -116,14 +116,15 @@ $(document).ready(function () {
 
 
 //  TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
-jQuery(document).ready(function () {
-    $('.tweet').twittie({
-        apiPath: 'assets/twit-api/tweet.php',
-        dateFormat: '%b. %d, %Y',
-        template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}"{{screen_name}}',
-        count: 1
-    });
-});
+// Uncomment this and hook it up to a rails route when needed.
+// jQuery(document).ready(function () {
+//     $('.tweet').twittie({
+//         apiPath: 'assets/twit-api/tweet.php',
+//         dateFormat: '%b. %d, %Y',
+//         template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}"{{screen_name}}',
+//         count: 1
+//     });
+// });
 
 
 
@@ -137,7 +138,7 @@ $(document).ready(function () {
 
 
 
-//on hover dropdown navigation        
+//on hover dropdown navigation
 $(document).ready(function () {
 
     $('.js-activated').dropdownHover({
@@ -171,7 +172,7 @@ jQuery(document).ready(function () {
 //mailchimp
 $('.form-subscribe input[type="text"], .form-subscribe input[type="email"]').live('focus keypress', function() {
 		var $email = $(this);
-		
+
 		if ($email.hasClass('error')) {
 			$email.val('').removeClass('error');
 		}
@@ -179,12 +180,12 @@ $('.form-subscribe input[type="text"], .form-subscribe input[type="email"]').liv
 			$email.val('').removeClass('success');
 		}
 	});
-	
+
 	// Subscribe form when submit to database
 	$('.form-subscribe').submit(function() {
 		var $email	= $(this).find('input[name="email"]');
 		var $submit	= $(this).find('input[name="submit"]');
-		
+
 		var email_pattern = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i;
 		if (email_pattern.test($email.val()) === false) {
 			$email.val('Please enter a valid email address!').addClass('error');
@@ -200,7 +201,7 @@ $('.form-subscribe input[type="text"], .form-subscribe input[type="email"]').liv
 				success: function(msg) {
 					if (parseInt(msg, 0) !== 0) {
 						var msg_split = msg.split('|');
-						
+
 						if (msg_split[0] === 'success') {
 							$submit.removeAttr('disabled');
 							$email.removeAttr('disabled').val(msg_split[1]).addClass('success');
@@ -212,7 +213,6 @@ $('.form-subscribe input[type="text"], .form-subscribe input[type="email"]').liv
 				}
 			});
 		}
-		
+
 		return false;
 	});
-	
