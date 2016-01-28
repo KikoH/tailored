@@ -148,25 +148,27 @@
 
 <div class="team">
     <div class="container">
+    <% @teams.each do |team| %>
         <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
-            <h2 class="center-title"> <span class="colored-text">Bavely</span> Team</h2>
+            <h2 class="center-title"> <span class="colored-text"><%= team.title %></h2>
             <span class="center-border-line"></span>
-            <p class="sub-text">Meet the bavley super creative team</p>
+            <p class="sub-text"><%= team.subtitle %></p>
         </div>
-        <div class="ms-info text-center">
-    <img style="width: 240px; height: 240px;" src="https://s3.amazonaws.com/kikoportfolio/kiko2.jpeg" alt="">
-            <h3>Nikita</h3>
-            <h4>Company ceo</h4>
-            <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        <div class="ms-info text-center" style ="margin-bottom: 100px;">
+    <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
+            <h3><%= team.name %></h3>
+            <h4><%= team.position %></h4>
+            <p class="email">E-Mail: <a href="#"><%= team.email %></a></p>
+            <p><%= team.description %></p>
             <ul class="ms-socials list-inline">
                 <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
                 <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
                 <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
                 <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
             </ul>
-        </div>     
+        </div>
     </div>
+    <% end %>
 </div><!--team section end-->
 
 
