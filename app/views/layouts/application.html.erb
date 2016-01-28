@@ -10,53 +10,52 @@
   <title>Tailored</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="80">
-<%= yield %>
-<div class="fullwidthbanner" id="home">
-    <div class="tp-banner">
-        <ul>
-            <!-- SLIDE  -->
-            <% @intros.each do |intro| %>
-            <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<%= intro.image %>" data-delay="10000"  data-saveperformance="off" data-title="slider 1">
-                <!-- MAIN IMAGE -->
-                <img src="<%= intro.image %>"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
-                <!-- LAYERS -->
-                <!-- LAYER NR. 1 -->    
-                <div class="tp-caption srcaption-bigwhite lfl ltr slider-title"
+    <div class="fullwidthbanner" id="home">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE  -->
+                <% @intros.each do |intro| %>
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<%= intro.image %>" data-delay="10000"  data-saveperformance="off" data-title="slider 1">
+                    <!-- MAIN IMAGE -->
+                    <img src="<%= intro.image %>"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->    
+                    <div class="tp-caption srcaption-bigwhite lfl ltr slider-title"
+                    data-x="center" data-hoffset="0"
+                    data-y="center" data-voffset="0"
+                    data-speed="1000"
+                    data-start="100"
+                    data-easing="easeInOutQuad"
+                    data-endspeed="1000"
+                    data-endeasing="easeInOutQuad"
+                    style="z-index: 2"><%= intro.title %></strong>
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption srcaption-miniwhite sfb slider-caption"
                 data-x="center" data-hoffset="0"
-                data-y="center" data-voffset="0"
-                data-speed="1000"
-                data-start="100"
+                data-y="bottom" data-voffset="-140"
+                data-speed="500"
+                data-start="1200"
                 data-easing="easeInOutQuad"
                 data-endspeed="1000"
                 data-endeasing="easeInOutQuad"
-                style="z-index: 2"><%= intro.title %></strong>
+                style="z-index: 3"><%= intro.description %>
             </div>
 
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption srcaption-miniwhite sfb slider-caption"
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption srcaption-miniwhite sfb text-light scroll-to slider-arrow-down"
             data-x="center" data-hoffset="0"
-            data-y="bottom" data-voffset="-140"
+            data-y="bottom" data-voffset="-40"
             data-speed="500"
-            data-start="1200"
+            data-start="1300"
             data-easing="easeInOutQuad"
             data-endspeed="1000"
             data-endeasing="easeInOutQuad"
-            style="z-index: 3"><%= intro.description %>
+            style="z-index: 3"><a href="#about" class="sr-button sr-buttonicon small-iconbutton scroll-to"><i class="ion-ios-arrow-down"></i></a>
         </div>
-
-        <!-- LAYER NR. 3 -->
-        <div class="tp-caption srcaption-miniwhite sfb text-light scroll-to slider-arrow-down"
-        data-x="center" data-hoffset="0"
-        data-y="bottom" data-voffset="-40"
-        data-speed="500"
-        data-start="1300"
-        data-easing="easeInOutQuad"
-        data-endspeed="1000"
-        data-endeasing="easeInOutQuad"
-        style="z-index: 3"><a href="#about" class="sr-button sr-buttonicon small-iconbutton scroll-to"><i class="ion-ios-arrow-down"></i></a>
-    </div>
-</li>
-<% end %>
+    </li>
+    <% end %>
 </ul>
 </div>
 </div><!--full width banner-->
@@ -154,133 +153,23 @@
             <span class="center-border-line"></span>
             <p class="sub-text">Meet the bavley super creative team</p>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <!-- team slider -->
-                <div class="ms-staff-carousel">
-                    <!-- masterslider -->
-                    <div class="master-slider" id="teamslider">
-                        <div class="ms-slide">
-                            <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" data-src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="lorem ipsum dolor sit"/>
-
-                            <div class="ms-info text-center">
-                                <h3>Nikita</h3>
-                                <h4>Company ceo</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" data-src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>John</h3>
-                                <h4>Web Developer</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="" data-src="" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>Maria</h3>
-                                <h4>Director</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="" data-src="" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>Adam</h3>
-                                <h4>Project Manager</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="" data-src="" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>Juliana</h3>
-                                <h4>CREATIVE DESIGNER</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="" data-src="" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>John</h3>
-                                <h4>CREATIVE DESIGNER</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                        <div class="ms-slide">
-                            <img src="" data-src="" alt="lorem ipsum dolor sit"/>  
-
-                            <div class="ms-info text-center">
-                                <h3>Maria</h3>
-                                <h4>CREATIVE DESIGNER</h4>
-                                <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                                <ul class="ms-socials list-inline">
-                                    <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                    <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                </ul>
-                            </div>     
-                        </div><!--slide item-->
-                    </div>
-                    <!-- end of masterslider -->
-                    <div class="ms-staff-info" id="staff-info"> </div>
-                </div>
-                <!-- end of team slider -->
-            </div>
-        </div>
+        <div class="ms-info text-center">
+    <img style="width: 240px; height: 240px;" src="https://s3.amazonaws.com/kikoportfolio/kiko2.jpeg" alt="">
+            <h3>Nikita</h3>
+            <h4>Company ceo</h4>
+            <p class="email">E-Mail: <a href="#">juliab@jourrapide.com</a></p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+            <ul class="ms-socials list-inline">
+                <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li class="ico-gp"><a href="#"><i class="ion-social-youtube"></i></a></li>
+                <li class="ico-yt"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+            </ul>
+        </div>     
     </div>
 </div><!--team section end-->
+
+
 <div class="testimonials parallax-2 dark">
 
     <div class="container">
@@ -920,7 +809,7 @@
 </footer><!--footer end-->
 
 
- 
+
 
 
 </body>
