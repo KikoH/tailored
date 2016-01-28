@@ -3,5 +3,6 @@ class DashboardsController < ApplicationController
 		@intros = Intro.all
 		@abouts = About.all
 		@teams = Team.all
+		@testimonials = Testimonial.all
 	end
 end
