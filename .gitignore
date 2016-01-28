@@ -12,3 +12,8 @@
 !/log/.keep
 /tmp
 .tags
+
+# Ignore jpeg/jpg/png
+*.jpeg
+*.jpg
+*.png
