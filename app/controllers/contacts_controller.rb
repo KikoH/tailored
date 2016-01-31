@@ -6,6 +6,8 @@ class ContactsController < ApplicationController
 	def create
 		#Check if name has any errors
 		check_name
+		# Check if email has any errors
+		check_email
 		# Only return render error if there are errors
 		return render 'error' unless errors.empty?
 		# Call ContactMailer and send the params to the method
@@ -22,6 +24,15 @@ class ContactsController < ApplicationController
 	 	#Return false if name is not a string or length less than 3
 	 	return false unless params[:name].is_a?(String)
 	 	return false unless params[:name].size > 3
+	 	true
+	 end
+
+	 def check_email
+	 	errors.push("Please enter a valid email") unless valid_email?
+	 end
+
+	 def valid_email?
+	 	return false unless params[:email] =~ /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
 	 	true
 	 end
 	 # errors array

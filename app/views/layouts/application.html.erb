@@ -710,7 +710,7 @@
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label class="control-label name-form" for="name">Name *</label>
+                                    <label class="control-label" for="name">Name *</label>
                                     <div>
                                         <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter your name" %>
                                     </div>
@@ -718,9 +718,6 @@
                                 </div> 
                             </div>
                         </div>
-                        <style>.name-field {
-        color: red;
-                            }</style>
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
@@ -741,6 +738,7 @@
                         </div>
                         <%= submit_tag(value='Send Feedback', class: "btn btn-dark-bg btn-lg") %>
                     </form>
+                    <div class="errors"></div>
                     <% end %>
                 </div><!--contact form-->
             </div><!--col-7-->
