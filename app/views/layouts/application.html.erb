@@ -705,27 +705,28 @@
         <div class="row">
             <div class="col-sm-7">
                 <div class="contact-form wow animated fadeInLeft" data-wow-delay=".2s">
-
+                    <%= form_tag contacts_path, remote: :true do %>
                     <form role="form" id="feedbackForm">
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label class="control-label" for="name">Name *</label>
+                                    <label class="control-label name-form" for="name">Name *</label>
                                     <div>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
-
+                                        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter your name" %>
                                     </div>
                                     <span class="help-block" style="display: none;">Please enter your name.</span>
                                 </div> 
                             </div>
                         </div>
+                        <style>.name-field {
+        color: red;
+                            }</style>
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
                                     <label class="control-label" for="email">Email Address *</label>
                                     <div>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
-
+                                        <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter your email" %>
                                     </div>
                                     <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
                                 </div>
@@ -734,13 +735,13 @@
                         <div class="form-group">
                             <label class="control-label" for="message">Message *</label>
                             <div>
-                                <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" ></textarea>
-
+                                <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter your message", rows: "5", cols: "30" %>
                             </div>
                             <span class="help-block" style="display: none;">Please enter a message.</span>
                         </div>
-                        <button type="submit" id="feedbackSubmit" class="btn btn-dark-bg btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Feedback</button>
+                        <%= submit_tag(value='Send Feedback', class: "btn btn-dark-bg btn-lg") %>
                     </form>
+                    <% end %>
                 </div><!--contact form-->
             </div><!--col-7-->
             <div class="col-sm-5">

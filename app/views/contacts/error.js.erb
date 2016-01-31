@@ -1,0 +1,3 @@
+if (<%= @errors.size %>) {
+	$('.name-form').append('<%= @errors.to_sentence %>').css("color", "red");
+}

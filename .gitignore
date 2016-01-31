@@ -17,3 +17,5 @@
 *.jpeg
 *.jpg
 *.png
+
+*.byebug_history
