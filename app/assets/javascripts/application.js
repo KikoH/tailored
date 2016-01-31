@@ -33,6 +33,4 @@
 //= require jquery.cubeportfolio.min
 //= require cube-portfolio
 //= require pricing
-//= require masterslider.min
-//= require masterslider-custom
 //= require pace.min

@@ -148,14 +148,14 @@
 
 <div class="team">
     <div class="container">
-    <% @teams.each do |team| %>
+        <% @teams.each do |team| %>
         <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
             <h2 class="center-title"> <span class="colored-text"><%= team.title %></h2>
             <span class="center-border-line"></span>
             <p class="sub-text"><%= team.subtitle %></p>
         </div>
         <div class="ms-info text-center" style ="margin-bottom: 100px;">
-    <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
+            <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
             <h3><%= team.name %></h3>
             <h4><%= team.position %></h4>
             <p class="email">E-Mail: <a href="#"><%= team.email %></a></p>
@@ -184,7 +184,7 @@
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="flexslider testi-slider wow animated fadeInUp" data-wow-delay=".2s">
                     <ul class="slides">
-                    <% @testimonials.each do |testimony| %>
+                        <% @testimonials.each do |testimony| %>
                         <li>
                             <div class="testi-slider-item">
                                 <p>
@@ -510,69 +510,71 @@
         </div>
 
         <div id="grid-container" class="cbp">
+            <% @testimonials.each do |test| %>
             <div class="cbp-item print motion">
-                <a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline"
-                data-title="World Clock Widget<br>by Paul Flavius Nechita">
+                <a href="<%= test.image %>" class="cbp-caption cbp-singlePageInline"
+                    data-title="World Clock Widget<br>by Paul Flavius Nechita"> 
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignLeft">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">World Clock Widget</div>
+                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <% end %>
+            <div class="cbp-item web-design">
+                <a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+                data-title="Bolt UI<br>by Tiberiu Neamu">
                 <div class="cbp-caption-defaultWrap">
-                    <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="">
+                    <img src="" alt="">
                 </div>
                 <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignLeft">
                         <div class="cbp-l-caption-body">
-                            <div class="cbp-l-caption-title">World Clock Widget</div>
-                            <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                            <div class="cbp-l-caption-title">Bolt UI</div>
+                            <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="cbp-item web-design">
-            <a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
-            data-title="Bolt UI<br>by Tiberiu Neamu">
+        <div class="cbp-item print motion">
+            <a href="assets/ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+            data-title="WhereTO App<br>by Tiberiu Neamu">
             <div class="cbp-caption-defaultWrap">
                 <img src="" alt="">
             </div>
             <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                     <div class="cbp-l-caption-body">
-                        <div class="cbp-l-caption-title">Bolt UI</div>
+                        <div class="cbp-l-caption-title">WhereTO App</div>
                         <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-    <div class="cbp-item print motion">
-        <a href="assets/ajax/project3.html" class="cbp-caption cbp-singlePageInline"
-        data-title="WhereTO App<br>by Tiberiu Neamu">
+    <div class="cbp-item web-design print">
+        <a href="" class="cbp-caption cbp-singlePageInline"
+        data-title="iDevices<br>by Tiberiu Neamu">
         <div class="cbp-caption-defaultWrap">
             <img src="" alt="">
         </div>
         <div class="cbp-caption-activeWrap">
             <div class="cbp-l-caption-alignLeft">
                 <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">WhereTO App</div>
+                    <div class="cbp-l-caption-title">iDevices</div>
                     <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
                 </div>
             </div>
         </div>
     </a>
-</div>
-<div class="cbp-item web-design print">
-    <a href="" class="cbp-caption cbp-singlePageInline"
-    data-title="iDevices<br>by Tiberiu Neamu">
-    <div class="cbp-caption-defaultWrap">
-        <img src="" alt="">
-    </div>
-    <div class="cbp-caption-activeWrap">
-        <div class="cbp-l-caption-alignLeft">
-            <div class="cbp-l-caption-body">
-                <div class="cbp-l-caption-title">iDevices</div>
-                <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-            </div>
-        </div>
-    </div>
-</a>
 </div>
 <div class="cbp-item motion">
     <a href="" class="cbp-caption cbp-singlePageInline"

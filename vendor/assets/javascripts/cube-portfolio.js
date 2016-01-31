@@ -44,7 +44,7 @@
             var t = this;
 
             $.ajax({
-                    url: url,
+                    url: '/',
                     type: 'GET',
                     dataType: 'html',
                     timeout: 10000
