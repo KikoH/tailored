@@ -20,6 +20,17 @@
                     <img src="<%= intro.image %>"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->    
+                    <% if intro.id === 1 %>
+                    <div class="tp-caption srcaption-bigwhite lfl ltr slider-title introone"
+                    data-x="center" data-hoffset="0"
+                    data-y="center" data-voffset="0"
+                    data-speed="1000"
+                    data-start="100"
+                    data-easing="easeInOutQuad"
+                    data-endspeed="1000"
+                    data-endeasing="easeInOutQuad"
+                    style="z-index: 2"> <img style="width: 700px; height: 700px; margin-bottom: 20px;" src="https://s3.amazonaws.com/tailored/logo1.png" alt=""> </strong>
+                    <% else %>
                     <div class="tp-caption srcaption-bigwhite lfl ltr slider-title"
                     data-x="center" data-hoffset="0"
                     data-y="center" data-voffset="0"
@@ -28,7 +39,8 @@
                     data-easing="easeInOutQuad"
                     data-endspeed="1000"
                     data-endeasing="easeInOutQuad"
-                    style="z-index: 2"> <img style="width: 700px; height: 700px;" src="https://s3.amazonaws.com/tailored/logo1.png" alt=""> </strong>
+                    style="z-index: 2"> <%= intro.title %> </strong>
+                    <% end %>
                 </div>
 
                 <!-- LAYER NR. 2 -->
@@ -52,7 +64,7 @@
             data-easing="easeInOutQuad"
             data-endspeed="1000"
             data-endeasing="easeInOutQuad"
-            style="z-index: 3"><a href="#<%=intro.description%>" class="sr-button sr-buttonicon small-iconbutton scroll-to"><i class="ion-ios-arrow-down"></i></a>
+            style="z-index: 3"><a href="#<%=intro.scroll%>" class="sr-button sr-buttonicon small-iconbutton scroll-to"><i class="ion-ios-arrow-down"></i></a>
         </div>
     </li>
     <% end %>
@@ -70,15 +82,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=""><img src="https://s3.amazonaws.com/tailored/logo2.png" alt="LOGO"></a>
+            <a class="navbar-brand" href=""><img style="height: 160px; position: absolute; top: -50px;"src="https://s3.amazonaws.com/tailored/logo2.png" alt="LOGO"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right scroll-to">
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#work">Work</a></li>                       
-                <li><a href="#contact">Contact</a></li>                                 
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
                 <!--  <span class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true">Pages <i class="caret"></i></span>
                  <ul class="dropdown-menu">
@@ -219,17 +231,17 @@
         <div class="row">
             <div class="col-sm-4 margin-bottom30">
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.2s">
-                    <h3 class="services-title">Branding</h3>
-                    <i class="ion-ios-paperplane-outline icon-big-round"></i>
+                    <h3 class="services-title">Event Planning</h3>
+                    <i class="ion-easel icon-big-round"></i>
                     <p>
-                        Vestibulum commodo aliquam sollicitudin metus vitae. Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        After understanding your inspirations, visions and personal style, we implement everything through décor concept, design elements, lighting, entertainment & event production. Each and every event will be unique and tailored per client to meet their personality and vision.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
-                        <li>Research</li>
-                        <li>Strategy</li>
-                        <li>Design</li>
-                        <li>Experience</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
                         <li><i class="ion-close"></i></li>
                         <li><i class="ion-close"></i></li>
                     </ul>
@@ -237,37 +249,38 @@
             </div><!--col-->
             <div class="col-sm-4 margin-bottom30">
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.4s">
-                    <h3 class="services-title">Web development</h3>
-                    <i class="ion-social-wordpress-outline icon-big-round"></i>
+                    <h3 class="services-title">Event Décor & Design</h3>
+                    <i class="ion-ios-flower icon-big-round"></i>
                     <p>
-                        Vestibulum commodo aliquam sollicitudin metus vitae. Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Custom conceptualisation and design for a wide range of events, whether social, corporate, parties, or weddings. Each event will reflect the style, needs and personality of the client and will be implemented through floral designs, table
+                        settings, lighting, linen, furniture and accessories.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
-                        <li>Wordpress</li>
-                        <li>Php</li>
-                        <li>Woo commerce</li>
-                        <li>magento</li>
-                        <li>Drupal</li>
-                        <li>Seo</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
                     </ul>
                 </div><!--service box-->
             </div><!--col-->
             <div class="col-sm-4 margin-bottom30">
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.6s">
-                    <h3 class="services-title">Design</h3>
-                    <i class="ion-ios-color-wand-outline icon-big-round"></i>
+                    <h3 class="services-title">Event Management</h3>
+                    <i class="ion-ios-gear-outline icon-big-round"></i>
                     <p>
-                        Vestibulum commodo aliquam sollicitudin metus vitae. Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    We will be responsible to ensure the clients’ dream event they have been scheming for months to be carried out as they planned. With our expertise and knowledge, we will handle & execute all the details and logistics on the special day by coordinating with all the vendors needed on the day of the event.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
-                        <li>HTML5 / CSS3</li>
-                        <li>Less / SASS</li>
-                        <li>Psd design</li>
-                        <li>Logo Design</li>
-                        <li>Responsive Designs</li>
-                        <li>Mobile App</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
+                        <li>X</li>
                     </ul>
                 </div><!--service box-->
             </div><!--col-->
@@ -512,67 +525,67 @@
         <div id="grid-container" class="cbp">
             <div class="cbp-item print motion">
                 <a href="" class="cbp-caption cbp-singlePageInline"
-                    data-title="World Clock Widget<br>by Paul Flavius Nechita"> 
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">World Clock Widget</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item web-design">
-                <a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
-                data-title="Bolt UI<br>by Tiberiu Neamu">
+                data-title="World Clock Widget<br>by Paul Flavius Nechita"> 
                 <div class="cbp-caption-defaultWrap">
-                    <img src="" alt="">
+                    <img src="https://www.google.ca/logos/doodles/2016/90th-anniversary-of-the-first-demonstration-of-television-6281357497991168.3-res.png" alt="">
                 </div>
                 <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignLeft">
                         <div class="cbp-l-caption-body">
-                            <div class="cbp-l-caption-title">Bolt UI</div>
-                            <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                            <div class="cbp-l-caption-title">World Clock Widget</div>
+                            <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="cbp-item print motion">
-            <a href="assets/ajax/project3.html" class="cbp-caption cbp-singlePageInline"
-            data-title="WhereTO App<br>by Tiberiu Neamu">
+        <div class="cbp-item web-design">
+            <a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+            data-title="Bolt UI<br>by Tiberiu Neamu">
             <div class="cbp-caption-defaultWrap">
                 <img src="" alt="">
             </div>
             <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                     <div class="cbp-l-caption-body">
-                        <div class="cbp-l-caption-title">WhereTO App</div>
+                        <div class="cbp-l-caption-title">Bolt UI</div>
                         <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-    <div class="cbp-item web-design print">
-        <a href="" class="cbp-caption cbp-singlePageInline"
-        data-title="iDevices<br>by Tiberiu Neamu">
+    <div class="cbp-item print motion">
+        <a href="assets/ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+        data-title="WhereTO App<br>by Tiberiu Neamu">
         <div class="cbp-caption-defaultWrap">
             <img src="" alt="">
         </div>
         <div class="cbp-caption-activeWrap">
             <div class="cbp-l-caption-alignLeft">
                 <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">iDevices</div>
+                    <div class="cbp-l-caption-title">WhereTO App</div>
                     <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
                 </div>
             </div>
         </div>
     </a>
+</div>
+<div class="cbp-item web-design print">
+    <a href="" class="cbp-caption cbp-singlePageInline"
+    data-title="iDevices<br>by Tiberiu Neamu">
+    <div class="cbp-caption-defaultWrap">
+        <img src="" alt="">
+    </div>
+    <div class="cbp-caption-activeWrap">
+        <div class="cbp-l-caption-alignLeft">
+            <div class="cbp-l-caption-body">
+                <div class="cbp-l-caption-title">iDevices</div>
+                <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+            </div>
+        </div>
+    </div>
+</a>
 </div>
 <div class="cbp-item motion">
     <a href="" class="cbp-caption cbp-singlePageInline"
