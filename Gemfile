@@ -45,6 +45,12 @@ gem 'pundit'
 # Thin
 gem 'thin'
 
+#Figaro
+gem 'figaro'
+
+#Fog
+gem 'fog'
+
 #CarrierWave file uploads
 gem 'carrierwave'
 gem 'rmagick'
