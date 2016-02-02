@@ -4,10 +4,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">       
-  <title>Tailored</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">       
+<title>Tailored</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="80">
     <div class="fullwidthbanner" id="home">
@@ -271,7 +271,7 @@
                     <h3 class="services-title">Event Management</h3>
                     <i class="ion-ios-gear-outline icon-big-round"></i>
                     <p>
-                    We will be responsible to ensure the clients’ dream event they have been scheming for months to be carried out as they planned. With our expertise and knowledge, we will handle & execute all the details and logistics on the special day by coordinating with all the vendors needed on the day of the event.
+                        We will be responsible to ensure the clients’ dream event they have been scheming for months to be carried out as they planned. With our expertise and knowledge, we will handle & execute all the details and logistics on the special day by coordinating with all the vendors needed on the day of the event.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
@@ -760,13 +760,7 @@
                 </p>
                 <br>
                 <br>
-                <h4>Our Location!</h4>
-                <p>
-                    124, Munna wali, street 3 Makan<br>
-                    Sydney<br>
-                    Australia<br>
-                    <a href="#">support@bootstraplovers.com</a>
-                </p>
+                <div id="map" style="height: 250px;"></div>
             </div>
         </div><!--row-->
     </div><!--container-->
@@ -808,9 +802,30 @@
     </div>
 </footer><!--footer end-->
 
+<script type="text/javascript">
+
+var map;
+function initMap() {
+    var myLatLng = {lat: -34.397, lng: 150.644};
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 15
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Tailored'
+  });
+}
+
+</script>
 
 
 
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKtTdsu4z83PUNmiKhAb0tPKTBoqY7lSw&callback=initMap">
+</script>
 
 </body>
 </html>
