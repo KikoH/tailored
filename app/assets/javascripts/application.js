@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require jquery.min
 //= require jquery-migrate.min
 //= require moderniz.min
