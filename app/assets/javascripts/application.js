@@ -34,3 +34,4 @@
 //= require cube-portfolio
 //= require pricing
 //= require pace.min
+//= require maps
