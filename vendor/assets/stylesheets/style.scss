@@ -4,11 +4,20 @@
     Project    : Bavely - Classy One page Theme
 */
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300);
+@font-face {
+  font-family: 'CursiveFlourish';
+  src: font-url('CursiveFlourish.ttf');
+}
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: font-url('AmericanTypewriterRegular.ttf');
+}
 /************base*************/
 body {
   color: #777;
   background-color: #fff;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'AmericanTypewriter' ,"Poppins", sans-serif !important;
   font-size: 13px;
   line-height: 24px;
   font-weight: 300;
@@ -99,12 +108,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   display: inline-block;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "CursiveFlourish", sans-serif;
 }
 
 .sub-text {
