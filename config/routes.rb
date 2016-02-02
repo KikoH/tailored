@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
     root :to => 'dashboards#index'
     resources "contacts", only: [:new, :create]
+    resources "users", only: [:new, :create]
 end

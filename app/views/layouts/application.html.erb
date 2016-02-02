@@ -4,10 +4,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">       
-<title>Tailored</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">       
+  <title>Tailored</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="80">
     <div class="fullwidthbanner" id="home">
@@ -689,11 +689,13 @@
         </div>
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
+                <%= form_for User.new, remote: true do |f| %>
                 <form role="form" class="form-subscribe">
-                    <input type="email" name="email" placeholder="Enter your email" class="form-control">
-                    <button type="submit" class="btn btn-lg btn-block btn-dark-bg" name="submit">Subscribe</button>
-                    <!--                            <button type="submit" class="btn btn-lg btn-block btn-dark-bg">Subscribe</button>-->
+                    <%= f.text_field :email, class: "form-control", placeholder: "Enter your email" %>
+                    <%= f.submit 'Subscribe', class: "btn btn-lg btn-block btn-dark-bg" %>
                 </form>
+                    <% end %>
+                    <div class="subscribe-errors"></div>
             </div>
         </div>
     </div>
@@ -804,20 +806,20 @@
 
 <script type="text/javascript">
 
-var map;
-function initMap() {
-    var myLatLng = {lat: -34.397, lng: 150.644};
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
-    zoom: 15
-  });
+    var map;
+    function initMap() {
+        var myLatLng = {lat: -34.397, lng: 150.644};
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 15
+        });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Tailored'
-  });
-}
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Tailored'
+        });
+    }
 
 </script>
 
