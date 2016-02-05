@@ -28,7 +28,7 @@ class ContactsController < ApplicationController
 	 end
 
 	 def check_email
-	 	errors.push("Please enter a valid email") unless valid_email?
+	 	errors.push("Enter a valid email") unless valid_email?
 	 end
 
 	 def valid_email?
