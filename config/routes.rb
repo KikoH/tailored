@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     root :to => 'dashboards#index'
     resources "contacts", only: [:new, :create]
     resources "users", only: [:new, :create]
+    resources "portfolios", only: [:index, :show]
 end

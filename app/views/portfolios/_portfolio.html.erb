@@ -1,0 +1,20 @@
+<div class="cbp-l-inline" data-id="<%= @portfolio.id %>">
+    <div class="cbp-l-inline-left">
+        <a href="<%= @portfolio.image_url %>" class="cbp-lightbox">
+            <img src="<%= @portfolio.image_url %>" alt="Dashboard">
+        </a>
+        <br>
+        <a href="<%= @portfolio.image_url %>" class="cbp-lightbox">
+            <img src="<%= @portfolio.image_url %>" alt="Dashboard">
+        </a>
+    </div>
+
+    <div class="cbp-l-inline-right">
+        <div class="cbp-l-inline-title"><%= @portfolio.title %></div>
+        <div class="cbp-l-inline-subtitle">by <%= @portfolio.description %> </div>
+
+        <div class="cbp-l-inline-desc"><%= @portfolio.title %> </div>
+
+       <!-- <a href="#" target="_blank" class="cbp-l-inline-view">VIEW PROJECT</a> -->
+    </div>
+</div>
