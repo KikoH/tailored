@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+
 //= require jquery.min
+//= require jquery_ujs
 //= require jquery-migrate.min
 //= require moderniz.min
 //= require jquery.easing.1.3

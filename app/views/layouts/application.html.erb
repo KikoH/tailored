@@ -526,19 +526,19 @@
             <div class="cbp-item web-design <%#= portfolio.category %>">
                 <a href="<%= portfolio_path(portfolio) %>" class="cbp-caption cbp-singlePageInline"
                 data-title="<%= portfolio.title %> <br>by <%= portfolio.description %>"> 
-                <div class="cbp-caption-defaultWrap">
-                    <img src="<%= portfolio.image_url %>" alt="">
-                </div>
-                <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-alignLeft">
-                        <div class="cbp-l-caption-body">
-                            <div class="cbp-l-caption-title"><%= portfolio.title %></div>
-                            <div class="cbp-l-caption-desc">by <%= portfolio.description %></div>
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="<%= portfolio.image_url(:resize) %>" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignLeft">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title"><%= portfolio.title %></div>
+                                <div class="cbp-l-caption-desc">by <%= portfolio.description %></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
         <% end %>
 
         <!-- <div class="cbp-item web-design">

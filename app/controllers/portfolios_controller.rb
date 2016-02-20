@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
 	def index
-		@portfolios = Portfolio.all.offset(6)
+		@portfolios = Portfolio.all
 		render layout: false
 	end
 
