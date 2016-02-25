@@ -498,9 +498,8 @@
             </div>
         </div><!--center title row end-->
     </div><!--container-->
-    <div class="container">  
 
-
+    <div class="container">
         <div id="filters-container" class="cbp-l-filters-dropdown">
             <div class="cbp-l-filters-dropdownWrap">
                 <div class="cbp-l-filters-dropdownHeader">Sort Gallery</div>
@@ -508,14 +507,14 @@
                     <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
                         All (<div class="cbp-filter-counter"></div> items)
                     </div>
-                    <div data-filter=".print" class="cbp-filter-item">
-                        Print (<div class="cbp-filter-counter"></div> items)
+                    <div data-filter=".weddings" class="cbp-filter-item">
+                        Weddings (<div class="cbp-filter-counter"></div> items)
                     </div>
-                    <div data-filter=".web-design" class="cbp-filter-item">
-                        Web Design (<div class="cbp-filter-counter"></div> items)
+                    <div data-filter=".birthdays" class="cbp-filter-item">
+                        Birthdays (<div class="cbp-filter-counter"></div> items)
                     </div>
-                    <div data-filter=".motion" class="cbp-filter-item">
-                        Motion (<div class="cbp-filter-counter"></div> items)
+                    <div data-filter=".custom" class="cbp-filter-item">
+                        Custom (<div class="cbp-filter-counter"></div> items)
                     </div>
                 </div>
             </div>
@@ -523,11 +522,11 @@
 
         <div id="grid-container" class="cbp">
         <% @portfolios.each do |portfolio| %>
-            <div class="cbp-item web-design <%#= portfolio.category %>">
+            <div class="cbp-item <%= portfolio.category %>">
                 <a href="<%= portfolio_path(portfolio) %>" class="cbp-caption cbp-singlePageInline"
                 data-title="<%= portfolio.title %> <br>by <%= portfolio.description %>"> 
                     <div class="cbp-caption-defaultWrap">
-                        <img src="<%= portfolio.image_url(:resize) %>" alt="">
+                        <img src="<%= portfolio.main_image_url(:resize) %>" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignLeft">
