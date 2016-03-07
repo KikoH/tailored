@@ -4,5 +4,5 @@ class Portfolio < ActiveRecord::Base
 
 	mount_uploader :main_image, ImageUploader
 
-	default_scope { order('created_at ASC') }
+	default_scope { order('created_at DESC') }
 end
