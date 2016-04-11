@@ -45,6 +45,9 @@ gem 'pundit'
 # Thin
 gem 'thin'
 
+#Heroku
+gem 'rails_12factor'
+
 #Figaro
 gem 'figaro'
 
