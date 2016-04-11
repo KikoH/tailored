@@ -4,7 +4,7 @@ $(window).load(function() {
 
 var map;
 function initMap() {
-  var myLatLng = {lat: -34.397, lng: 150.644};
+  var myLatLng = {lat: 30.070163, lng: 31.222095};
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
     zoom: 15
