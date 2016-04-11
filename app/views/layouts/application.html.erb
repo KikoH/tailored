@@ -140,10 +140,10 @@
         </div>
 
         <div id="grid-container" class="cbp">
-        <% @portfolios.each do |portfolio| %>
+            <% @portfolios.each do |portfolio| %>
             <div class="cbp-item <%= portfolio.category %>">
                 <a href="<%= portfolio_path(portfolio) %>" class="cbp-caption cbp-singlePageInline"
-                data-title="<%= portfolio.title %> <br>by <%= portfolio.description %>"> 
+                    data-title="<%= portfolio.title %> <br>by <%= portfolio.description %>"> 
                     <div class="cbp-caption-defaultWrap">
                         <img src="<%= portfolio.main_image_url(:resize) %>" alt="">
                     </div>
@@ -157,7 +157,7 @@
                     </div>
                 </a>
             </div>
-        <% end %>
+            <% end %>
 
         <!-- <div class="cbp-item web-design">
             <a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
@@ -358,7 +358,7 @@
                         Pellentesquemattis arcu malesuada in. Donec urna sem, rutrum sit amet pellentesque vel, suscipit at metus.
                     </p>
                 </div> --><!--service features-->
-            <!-- </div> -->
+                <!-- </div> -->
             <!-- <div class="col-sm-4 margin-bottom30">
                 <div class="service-features wow animated fadeIn" data-wow-delay=".3s">
                     <i class="ion-ios-people-outline"></i>
@@ -367,7 +367,7 @@
                         Pellentesquemattis arcu malesuada in. Donec urna sem, rutrum sit amet pellentesque vel, suscipit at metus.
                     </p>
                 </div> --><!--service features-->
-            <!-- </div> -->
+                <!-- </div> -->
             <!-- <div class="col-sm-4 margin-bottom30">
                 <div class="service-features wow animated fadeIn" data-wow-delay=".4s">
                     <i class="ion-ios-color-wand-outline"></i>
@@ -376,32 +376,32 @@
                         Pellentesquemattis arcu malesuada in. Donec urna sem, rutrum sit amet pellentesque vel, suscipit at metus.
                     </p>
                 </div> --><!--service features-->
-            <!-- </div> -->
-        <!-- </div> --> <!--row-->
-    
+                <!-- </div> -->
+                <!-- </div> --> <!--row-->
 
-    </div><!--container-->
-</section><!--about section end-->
 
-<div class="team">
-    <div class="container">
-        <% @teams.each do |team| %>
-        <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
-            <h2 class="center-title"> <span class="colored-text"><%= team.title %></h2>
-            <span class="center-border-line"></span>
-            <p class="sub-text"><%= team.subtitle %></p>
-        </div>
-        <div class="ms-info text-center" style ="margin-bottom: 100px;">
-            <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
-            <h3><%= team.name %></h3>
-            <h4><%= team.position %></h4>
-            <p class="email">E-Mail: <a href="#"><%= team.email %></a></p>
-            <p><%#= team.description %>
-                Based in Cairo, Egypt, Nermin started her career in the field of Advertising where she gained a lot of experience working with creative mindsets and different sorts of clienteles. Four years later, she ventured into event planning and styling, where she was able to use and apply her skills by creating custom designs and parties for her clients. She has always been keen to learn and gain new skills; so she traveled to England and acquired an intensive floristry design certificate at McQueens Flower School in London.
-                <br>
-                <br>
-                Today, Nermin and her amazing team are best known for their creative designs, unexpected décor accents and exquisite attention to every detail. Nermin’s gleeful personality and calm attitude help put her clients at ease while she creates customized parties of their dreams. No matter the number of guests, Nermin, and her team creates stylish, one-of-a-kind personalized and unforgettable events.
-            </p>
+            </div><!--container-->
+        </section><!--about section end-->
+
+        <div class="team">
+            <div class="container">
+                <% @teams.each do |team| %>
+                <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
+                    <h2 class="center-title"> <span class="colored-text"><%= team.title %></h2>
+                    <span class="center-border-line"></span>
+                    <p class="sub-text"><%= team.subtitle %></p>
+                </div>
+                <div class="ms-info text-center" style ="margin-bottom: 100px;">
+                    <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
+                    <h3><%= team.name %></h3>
+                    <h4><%= team.position %></h4>
+                    <p class="email">E-Mail: <a href="#"><%= team.email %></a></p>
+                    <p><%#= team.description %>
+                        Based in Cairo, Egypt, Nermin started her career in the field of Advertising where she gained a lot of experience working with creative mindsets and different sorts of clienteles. Four years later, she ventured into event planning and styling, where she was able to use and apply her skills by creating custom designs and parties for her clients. She has always been keen to learn and gain new skills; so she traveled to England and acquired an intensive floristry design certificate at McQueens Flower School in London.
+                        <br>
+                        <br>
+                        Today, Nermin and her amazing team are best known for their creative designs, unexpected décor accents and exquisite attention to every detail. Nermin’s gleeful personality and calm attitude help put her clients at ease while she creates customized parties of their dreams. No matter the number of guests, Nermin, and her team creates stylish, one-of-a-kind personalized and unforgettable events.
+                    </p>
             <!-- <ul class="ms-socials list-inline">
                 <li class="ms-ico-fb"><a href="#"><i class="ion-social-facebook"></i></a></li>
                 <li class="ico-tw"><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -453,7 +453,7 @@
                         <li>Full execution of venue décor and set up</li>
                     </ul>
                 </div><!--service box -->
-             </div><!--col-->
+            </div><!--col-->
             <div class="col-sm-4 margin-bottom30">
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.4s">
                     <h3 class="services-title">Event Décor & Design</h3>
@@ -751,7 +751,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-7">
+        <div class="col-sm-7">
                 <div class="contact-form wow animated fadeInLeft" data-wow-delay=".2s">
                     <%= form_tag contacts_path, remote: :true do %>
                     <form role="form" id="feedbackForm">
@@ -774,6 +774,37 @@
                                         <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter your email" %>
                                     </div>
                                     <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">How did you hear about us?</label>
+                                    <div>
+                                        <%= text_field_tag :hear, nil, class: "form-control" %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">Can we publish your wedding images on our social media?</label>
+                                    <div>
+                                        <%= radio_button_tag :can_publish,  "yes" %> Yes
+                                        <%= radio_button_tag :can_publish, 'no' %> No
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">Where will your wedding be held? (if decided)</label>
+                                    <div>
+                                        <%= text_field_tag :held, nil, class: "form-control" %>
+                                    </div>
                                 </div>
                             </div>
                         </div>
