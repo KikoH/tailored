@@ -112,7 +112,7 @@
                 <div class="text-center">
                     <h2 class="center-title">Portfolio</h2>
                     <span class="center-border-line"></span>
-                    <p class="sub-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in piece of classical Latin literature from 45 BC, it a old.</p>
+                    <p class="sub-text">Check out some of our recent work. We respect the privacy of our clients, so we do not post all of our completed projects. If you’re interested in seeing more, let’s connect.</p>
                 </div>
             </div>
         </div><!--center title row end-->
@@ -299,6 +299,29 @@
 
 </div><!--container-->
 </section><!--portfolio section end here-->
+
+<!-- NEWSLETTER Section -->
+
+<div class="newsletter">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="center-title">Newsletter</h2>
+            <span class="center-border-line"></span>
+            <p class="sub-text">Subscribe to our weekly updates</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <%= form_for User.new, remote: true do |f| %>
+                <form role="form" class="form-subscribe">
+                    <%= f.text_field :email, class: "form-control", placeholder: "Enter your email" %>
+                    <%= f.submit 'Subscribe', class: "btn btn-lg btn-block btn-dark-bg" %>
+                </form>
+                <% end %>
+                <div class="subscribe-errors"></div>
+            </div>
+        </div>
+    </div>
+</div><!--newsletter end-->
 
 
 <section id="about" class="section-padding">
@@ -684,28 +707,7 @@
 
 </div><!--gray cta-->
 
-<!-- NEWSLETTER Section -->
 
-<div class="newsletter">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="center-title"> newsletter</h2>
-            <span class="center-border-line"></span>
-            <p class="sub-text">Subscribe to our weekly updates</p>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-                <%= form_for User.new, remote: true do |f| %>
-                <form role="form" class="form-subscribe">
-                    <%= f.text_field :email, class: "form-control", placeholder: "Enter your email" %>
-                    <%= f.submit 'Subscribe', class: "btn btn-lg btn-block btn-dark-bg" %>
-                </form>
-                <% end %>
-                <div class="subscribe-errors"></div>
-            </div>
-        </div>
-    </div>
-</div><!--newsletter end-->
 <!-- <div class="call-to-action cta-1 parallax-3">
 
 </div> call to action-->
