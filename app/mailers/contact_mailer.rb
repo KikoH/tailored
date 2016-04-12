@@ -1,4 +1,5 @@
 class ContactMailer < ActionMailer::Base
+	default from: "test@example.com"
 	#Create a method that assigns the params to instace variables
 	def new_feedback(name, email, hear, can_publish, held, message)
 		@name = name
