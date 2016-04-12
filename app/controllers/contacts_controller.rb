@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
 		# Only return render error if there are errors
 		return render 'error' unless errors.empty?
 		# Call ContactMailer and send the params to the method
-		ContactMailer.new_feedback(params[:name], params[:email], params[:hear], params[:can_publish], params[:held].blank? ? "Left blank" : params[:held], params[:message]).deliver
+		ContactMailer.new_feedback(params[:name], params[:email], params[:hear], params[:can_publish], params[:held].blank? ? "Left blank" : params[:held], params[:message]).deliver_now
 	 end
 
 	 private
