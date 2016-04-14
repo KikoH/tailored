@@ -18,13 +18,14 @@ ActiveAdmin.register Portfolio do
 			f.input :subtitle
 			f.input :category, :label => 'Category', :as => :select, :collection => ["weddings", "birthdays", "custom"]
 			f.input :description
-			f.input :main_image
+			f.input :main_image, label: "Main Image",
+			as: :file, :hint => image_tag(f.object.main_image.url(:thumb))
 		end
 
 		f.inputs do
 			f.has_many :images do |i|
 				i.input :image, label: 'Images',
-				as: :file
+				as: :file, :hint => i.object.image.nil? ? i.template.content_tag(:span, "No Image Yet") : i.template.image_tag(i.object.image.url(:thumb))
 			end
 		end
 		f.actions
