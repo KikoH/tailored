@@ -6,7 +6,7 @@
 		<a href="<%= portfolio_path(portfolio) %>" class="cbp-caption cbp-singlePageInline"
 			data-title="<%= portfolio.title %> <br>by <%= portfolio.description %>"> 
 			<div class="cbp-caption-defaultWrap">
-				<img src="<%= portfolio.image_url(:resize) %>" alt="">
+				<img src="<%= portfolio.main_image_url(:resize) %>" alt="">
 			</div>
 			<div class="cbp-caption-activeWrap">
 				<div class="cbp-l-caption-alignLeft">
