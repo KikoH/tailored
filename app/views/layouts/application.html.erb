@@ -340,10 +340,10 @@
             <div class="col-sm-8 text-center col-sm-offset-2">
                 <p class="lead subtitle-center wow animated fadeIn" data-wow-delay=".1s">
                     <%#= about.description %>
-                    Established In 2012, We Started Planning And Designing Intimate Events And Celebrations For Close Friends And Families Who Saw Our Vision And Passion In Event Management And Design. We Executed Some Amazing And Memorable Events That Helped Tailor’d Team Grow To Create Stylish, Elegant, Glamorous And Fun Celebrations.
+                    Established in 2012, we started planning and designing intimate events and celebrations for close friends and families who saw our vision and passion in event management and design. We executed some amazing and memorable events that helped Tailor’d team grow to create stylish, elegant, glamorous and fun celebrations.
                     <br>
                     <br>
-                    Whether You Are A Bride-To-Be Or Planning On Hosting A Special Event, Tailor’d Specializes In Planning And Styling Significant Events Customized To Reflect Your Distinctive Style. We Strive To Bring Your Inspirations And Visions Then Infuse Them Into Your Special Day. From Engagements, To Wedding Receptions, To Grand Celebrations, Our Team Produces Unique And Surprising Events That Will Take Your Breath Away.
+                    Whether you are a bride-to-be or planning on hosting a special event, Tailor’d specializes in planning and styling significant events customized to reflect your distinctive style. We strive to bring your inspirations and visions then infuse them into your special day. From engagements, to wedding receptions, to grand celebrations, our team produces unique and surprising events that will take your breath away.
                 </p>
             </div>
         </div><!--sub title center-->
@@ -392,11 +392,11 @@
                     <p class="sub-text"><%= team.subtitle %></p>
                 </div>
                 <div class="ms-info text-center" style ="margin-bottom: 100px;">
-                    <img style="width: 240px; height: 240px; margin-bottom: 30px;" src="<%= team.image %>" alt="">
+                    <img style="width: 300px; height: auto; margin-bottom: 30px;" src="<%= team.image %>" alt="">
                     <h3><%= team.name %></h3>
-                    <h4><%= team.position %></h4>
-                    <p class="email">E-Mail: <a href="#"><%= team.email %></a></p>
-                    <p><%#= team.description %>
+                    <!-- <h4><%#= team.position %></h4> -->
+                    <!-- <p class="email">E-Mail: <a href="#"><%#= team.email %></a></p> -->
+                    <p style="font-size: 18px;"><%#= team.description %>
                         Based in Cairo, Egypt, Nermin started her career in the field of Advertising where she gained a lot of experience working with creative mindsets and different sorts of clienteles. Four years later, she ventured into event planning and styling, where she was able to use and apply her skills by creating custom designs and parties for her clients. She has always been keen to learn and gain new skills; so she traveled to England and acquired an intensive floristry design certificate at McQueens Flower School in London.
                         <br>
                         <br>
@@ -425,7 +425,7 @@
                     <h2 class="center-title">Our Services</h2>
                     <span class="center-border-line"></span>
                     <p class="sub-text">What we do?</p>
-                    <p>
+                    <p style="font-size: 18px;">
                         <strong>Tailor’d</strong> is a boutique full-service Event and Wedding Coordination company based in Egypt. By recognizing your unique taste and needs, we offer custom tailored services and packages that include full coordination from the beginning to end, day-of coordination, and decoration for your event. We dedicate extraordinary attention to detail to realize your vision for life’s biggest moments. Let us take care of all the logistics while you enjoy the journey.
                         <br>
                         <br>
@@ -445,7 +445,7 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.2s">
                     <h3 class="services-title">FULL-SERVICE EVENT PLANNING</h3>
                     <!-- <i class="ion-easel icon-big-round"></i> -->
-                    <p>
+                    <p style="font-size: 16px;">
                         After understanding your inspirations, visions and personal style, we implement everything through décor concept, design elements, lighting, entertainment & event production. Each and every event will be unique and tailored per client to meet their personality and vision.
                     </p>
                     <h4>What we offer</h4>
@@ -466,11 +466,11 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.4s">
                     <h3 class="services-title">Event Décor & Design</h3>
                     <!-- <i class="ion-ios-flower icon-big-round"></i> -->
-                    <p>
+                    <p style="font-size: 16px;">
                         Custom conceptualisation and design for a wide range of events, whether social, corporate, parties, or weddings. We will be assisting you with overall design of your event when it comes to the theme, décor reflecting your style, needs and personality. We will take your vision to the next level and execute every detail surrounding this special occasion.
                     </p>
                     <h4>What we offer</h4>
-                    <ul class=" list-unstyled">
+                    <ul class="list-unstyled">
                         <li>Overall event design</li>
                         <li>Furniture designs and table settings</li>
                         <li>Floor plan with table number assignment</li>
@@ -485,7 +485,7 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.6s">
                     <h3 class="services-title">DAY-OF-EVENT</h3>
                     <!-- <i class="ion-ios-gear-outline icon-big-round"></i> -->
-                    <p>
+                    <p style="font-size: 16px;">
                         You have done all the planning; now let us help you finalize the details so you can enjoy your special day. With our expertise and knowledge, we will handle and execute all the details and logistics on the day of the event by coordinating with all the vendors needed and agreed with during your planning process.
                     </p>
                     <h4>What we offer</h4>
@@ -513,7 +513,7 @@
         <div class="text-center wow animated fadeInDown" data-wow-delay=".1s">
             <h2 class="center-title"> <span class="colored-text">Happy </span> Clients</h2>
             <span class="center-border-line"></span>
-            <p class="sub-text">Over 8000 extremely satisfied clients!</p>
+            <!-- <p class="sub-text">Over 8000 extremely satisfied clients!</p> -->
         </div>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -840,18 +840,21 @@
     </div><!--container-->
 </section><!--contact section end-->
 
-<div class="numbers-cta">
+<div class="numbers-cta parallax-2 dark">
     <div class="container">
-        <div class="col-sm-6 col-md-4 margin-bottom30 text-center">
+        <div class="col-sm-6 col-md-3 margin-bottom30 text-center">
             <i class="ion-android-call"></i>
             <h3>002.0120.732.9333</h3>
+        </div>
+        <div class="col-sm-6 col-md-3 margin-bottom30 text-center">
+            <i class="ion-android-call"></i>
             <h3>002.0127.237.7238</h3>
         </div>
-        <div class="col-sm-6 col-md-4 margin-bottom30 text-center">
+        <div class="col-sm-6 col-md-3 margin-bottom30 text-center">
             <i class="ion-email"></i>
             <h3>info@tailordevents.com</h3>
         </div>
-        <div class="col-sm-6 col-md-4 margin-bottom30 text-center">
+        <div class="col-sm-6 col-md-3 margin-bottom30 text-center">
             <i class="ion-location"></i>
             <h3>35B, Mohamed Mazhar Street, Cairo, Egypt</h3>
         </div>
