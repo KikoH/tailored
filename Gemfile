@@ -33,6 +33,9 @@ gem 'cancan'
 gem 'draper'
 gem 'pundit'
 
+#Puma
+gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,9 +44,6 @@ gem 'pundit'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Thin
-gem 'thin'
 
 #Heroku
 gem 'rails_12factor'
