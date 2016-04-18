@@ -219,15 +219,6 @@
         color: #474747;
         background-color: rgb(177,211,210);
       }
-
-      .intro-title {
-        font-size: 40px;
-      }
-
-      .intro-text {
-        font-size: 18px;
-      }
-
     }
     .navbar-inverse li span {
       padding: 15px;
@@ -1619,6 +1610,18 @@ HOME V2 - PARALLAX BACKGROUND WITH FLEX TEXT SLIDER
 
   .home-text-wrapper h2 a {
     margin: 10px 0 40px;
+  }
+
+  .intro-title {
+    font-size: 40px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  .socials li {
+    padding: 0 15px;
   }
 }
 @media (max-width: 568px) {
