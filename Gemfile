@@ -49,7 +49,7 @@ gem 'file_validators'
 # gem 'capistrano-rails', group: :development
 
 #Heroku
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 #Figaro
 gem 'figaro'
