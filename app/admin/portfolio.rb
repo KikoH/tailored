@@ -8,12 +8,26 @@ ActiveAdmin.register Portfolio do
 	end
 
 
+	index do
+		selectable_column
+		column "Title" do |portfolio|
+			link_to portfolio.title, admin_portfolio_path(portfolio)
+		end
+		column :description
+		column :main_image
+	end
+
 	index as: :grid do |portfolio|
-		link_to image_tag(portfolio.main_image_url(:thumb)), admin_portfolio_path(portfolio)
+		resource_selection_cell portfolio
+		a href: admin_portfolio_path(portfolio) do
+			div portfolio.title
+			img src: portfolio.main_image_url(:thumb), alt: portfolio.title
+		end
 	end
 
 	form do |f|
 		f.inputs "Portfolios" do
+
 			f.input :title
 			f.input :subtitle
 			f.input :category, :label => 'Category', :as => :select, :collection => ["weddings", "birthdays", "custom"]
@@ -30,6 +44,4 @@ ActiveAdmin.register Portfolio do
 		end
 		f.actions
 	end
-
-	config.filters = false
 end
