@@ -1,11 +1,21 @@
 <div class="cbp-l-inline" data-id="<%= @portfolio.id %>">
     <div class="cbp-l-inline-left">
-        <% @portfolio.images.each do |image| %>
-        <a href="<%= image.image_url %>" class="cbp-lightbox portfolio-lightbox">
-            <img src="<%= image.image_url %>" alt="Dashboard">
-        </a>
-        <br>
-        <% end %>
+        <div class="cbp-slider">
+            <ul class="cbp-slider-wrap">
+            <li class="cbp-slider-item">
+                    <a href="<%= @portfolio.main_image_url %>" class="cbp-lightbox">
+                        <img src="<%= @portfolio.main_image_url %>" alt="">
+                    </a>
+                </li>
+             <% @portfolio.images.each do |image| %>
+                <li class="cbp-slider-item">
+                    <a href="<%= image.image_url %>" class="cbp-lightbox">
+                        <img src="<%= image.image_url %>" alt="">
+                    </a>
+                </li>
+                <% end %>
+            </div>
+        </ul>
     </div>
 
     <div class="cbp-l-inline-right">
