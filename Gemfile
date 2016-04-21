@@ -36,6 +36,9 @@ gem 'pundit'
 #Puma
 gem 'puma'
 
+# File Validator
+gem 'file_validators'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

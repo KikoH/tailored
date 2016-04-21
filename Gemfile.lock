@@ -105,6 +105,9 @@ GEM
     execjs (2.6.0)
     figaro (1.1.1)
       thor (~> 0.14)
+    file_validators (2.1.0)
+      activemodel (>= 3.0)
+      mime-types (>= 1.0)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.32.0)
@@ -350,6 +353,7 @@ DEPENDENCIES
   devise
   draper
   figaro
+  file_validators
   fog
   jbuilder (~> 2.0)
   jquery-rails
