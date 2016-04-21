@@ -51,7 +51,7 @@
                 })
                 .done(function(result) {
                     t.updateSinglePageInline(result);
-                    $('a.portfolio-lightbox').slice(1).hide();
+                    $('a.portfolio-lightbox').slice(2).hide();
 
                 })
                 .fail(function() {
