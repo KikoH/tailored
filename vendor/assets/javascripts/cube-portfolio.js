@@ -50,8 +50,8 @@
                     timeout: 10000
                 })
                 .done(function(result) {
-
                     t.updateSinglePageInline(result);
+                    $('a.portfolio-lightbox').slice(1).hide();
 
                 })
                 .fail(function() {

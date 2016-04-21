@@ -1,7 +1,7 @@
 <div class="cbp-l-inline" data-id="<%= @portfolio.id %>">
     <div class="cbp-l-inline-left">
-        <% @portfolio.images.limit(2).each do |image| %>
-        <a href="<%= image.image_url %>" class="cbp-lightbox">
+        <% @portfolio.images.each do |image| %>
+        <a href="<%= image.image_url %>" class="cbp-lightbox portfolio-lightbox">
             <img src="<%= image.image_url %>" alt="Dashboard">
         </a>
         <br>
