@@ -695,7 +695,7 @@ TESTIMONIALS
 
 *****************/
 .testimonials {
-  background: asset-url('shutterstock.jpg') no-repeat center center;
+  background: url('https://s3.amazonaws.com/tailored/shutterstock.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0;
@@ -966,7 +966,7 @@ ul.filter a:hover, ul.filter a.active, ul.filter a:focus {
 
 /****Twitter feeds****/
 .twitter-feed {
-  background: asset-url('shutterstock.jpg') no-repeat center center;
+  background: url('https://s3.amazonaws.com/tailored/shutterstock.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0;
@@ -1384,7 +1384,7 @@ body.gray-bg {
 .numbers-cta {
   padding-top: 80px;
   padding-bottom: 50px;
-  background: asset-url('shutterstock.jpg') no-repeat center center;
+  background: url('https://s3.amazonaws.com/tailored/shutterstock.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   background-position: 50% 0 !important;
@@ -1540,7 +1540,7 @@ HOME V2 - PARALLAX BACKGROUND WITH FLEX TEXT SLIDER
 }
 
 .parallax-bg {
-  background: asset-url('shutterstock.jpg') fixed;
+  background: url('https://s3.amazonaws.com/tailored/shutterstock.jpg') fixed;
   background-size: cover;
   background-position: center top;
   background-color: rgb(177,211,210);
