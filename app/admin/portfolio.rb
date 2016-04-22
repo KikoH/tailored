@@ -7,7 +7,6 @@ ActiveAdmin.register Portfolio do
 		link_to 'Create another', new_admin_portfolio_path
 	end
 
-
 	index do
 		selectable_column
 		column "Title" do |portfolio|
