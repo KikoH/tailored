@@ -28,6 +28,7 @@ ActiveAdmin.register Intro do
 			as: :file, :hint => image_tag(f.object.image.url(:thumb))
 			f.input :scroll, :label => 'Scroll to section', :as => :select, :collection => ["work", "about", "contact"], :selected => "about"
 		end
+		f.actions
 	end
 
 	config.filters = false
