@@ -312,7 +312,7 @@
         <div class="text-center">
             <h2 class="center-title">Newsletter</h2>
             <span class="center-border-line"></span>
-            <p class="sub-text"> Subscribe to get our latest updates.</p>
+            <p class="sub-text" style="text-align: center;"> Subscribe to get our latest updates.</p>
         </div>
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
@@ -336,13 +336,13 @@
                 <div class="text-center">
                     <h2 class="center-title"> <%= about.title %></h2>
                     <span class="center-border-line"></span>
-                    <p class="sub-text"><%= about.subtitle %></p>
+                    <p class="sub-text" style="text-align: center;"><%= about.subtitle %></p>
                 </div>
             </div>
         </div><!--left title row end-->
         <div class="row">
             <div class="col-sm-8 text-center col-sm-offset-2">
-                <p class="lead subtitle-center wow animated fadeIn" data-wow-delay=".1s">
+                <p class="lead subtitle-center wow animated fadeIn" style="text-align: justify;" data-wow-delay=".1s">
                     <%#= about.description %>
                     Established in 2012, we started planning and designing intimate events and celebrations for close friends and families who saw our vision and passion in event management and design. We executed some amazing and memorable events that helped Tailor’d team grow to create stylish, elegant, glamorous and fun celebrations.
                     <br>
@@ -393,14 +393,14 @@
                 <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
                     <h2 class="center-title"> <span class="colored-text"><%= team.title %></h2>
                     <span class="center-border-line"></span>
-                    <p class="sub-text"><%= team.subtitle %></p>
+                    <p class="sub-text" style="text-align: center;"><%= team.subtitle %></p>
                 </div>
-                <div class="ms-info text-center" style ="margin-bottom: 100px;">
+                <div class="col-sm-8 col-sm-offset-2 ms-info text-center" style ="margin-bottom: 100px;">
                     <img style="width: 300px; height: auto; margin-bottom: 30px;" src="<%= team.image %>" alt="">
                     <h3><%= team.name %></h3>
                     <!-- <h4><%#= team.position %></h4> -->
                     <!-- <p class="email">E-Mail: <a href="#"><%#= team.email %></a></p> -->
-                    <p style="font-size: 18px;"><%#= team.description %>
+                    <p style="font-size: 18px; line-height: 35px; text-align: justify;"><%#= team.description %>
                         Based in Cairo, Egypt, Nermin started her career in the field of Advertising where she gained a lot of experience working with creative mindsets and different sorts of clienteles. Four years later, she ventured into event planning and styling, where she was able to use and apply her skills by creating custom designs and parties for her clients. She has always been keen to learn and gain new skills; so she traveled to England and acquired an intensive floristry design certificate at McQueens Flower School in London.
                         <br>
                         <br>
@@ -428,8 +428,8 @@
                 <div class="text-center wow animated flipInX" data-wow-delay=".1s">
                     <h2 class="center-title">Our Services</h2>
                     <span class="center-border-line"></span>
-                    <p class="sub-text">What we do?</p>
-                    <p style="font-size: 18px;">
+                    <p class="sub-text" style="text-align: center;">What we do?</p>
+                    <p style="font-size: 18px; line-height: 35px; text-align: justify;">
                         <strong>Tailor’d</strong> is a boutique full-service Event and Wedding Coordination company based in Egypt. By recognizing your unique taste and needs, we offer custom tailored services and packages that include full coordination from the beginning to end, day-of coordination, and decoration for your event. We dedicate extraordinary attention to detail to realize your vision for life’s biggest moments. Let us take care of all the logistics while you enjoy the journey.
                         <br>
                         <br>
@@ -448,20 +448,20 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.2s">
                     <h3 class="services-title">FULL-SERVICE EVENT PLANNING</h3>
                     <!-- <i class="ion-easel icon-big-round"></i> -->
-                    <p style="font-size: 16px;">
-                        After understanding your inspirations, visions and personal style, we implement everything through décor concept, design elements, lighting, entertainment & event production. Each and every event will be unique and tailored per client to meet their personality and vision.
+                    <p>
+                        After understanding your inspirations, ideas, and personal style, we implement everything through décor concept, design elements, lighting, entertainment, event production and more. We ensure your special occasion will be nothing less than unique, distinct and "tailor'd" to you, by fulfilling all your whimsical visions.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
-                        <li>Professional consultation throughout the planning process</li>
-                        <li>Create wedding plan timeline</li>
-                        <li>Assist with budget development and management, customized for your wedding</li>
-                        <li>Handle all vendor proposals</li>
-                        <li>Act as primary contact for vendors and venue to ensure full communication among all parties</li>
-                        <li>Event site plan / design layout</li>
-                        <li>Create and develop wedding day timeline with all vendors</li>
-                        <li>Coordinate with all vendors on the day of the wedding</li>
+                        <li>Professional consultation during the planning process</li>
+                        <li>Manage all communications with vendors & venues</li>
+                        <li>Coordinate with all vendors on wedding day</li>
+                        <li>Manage vendors' timelines for wedding day</li>
                         <li>Full execution of venue décor and set up</li>
+                        <li>Assist with customized wedding budgets</li>
+                        <li>Event-site plan / design layout</li>
+                        <li>Create wedding plan timeline</li>
+                        <li>Handle all vendor proposals</li>
                     </ul>
                 </div><!--service box -->
             </div><!--col-->
@@ -469,18 +469,20 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.4s">
                     <h3 class="services-title">Event Décor & Design</h3>
                     <!-- <i class="ion-ios-flower icon-big-round"></i> -->
-                    <p style="font-size: 16px;">
-                        Custom conceptualisation and design for a wide range of events, whether social, corporate, parties, or weddings. We will be assisting you with overall design of your event when it comes to the theme, décor reflecting your style, needs and personality. We will take your vision to the next level and execute every detail surrounding this special occasion.
+                    <p>
+                        We conceptualize custom designs for events such as social, corporate, parties, weddings and more. We will be assisting you with an overall design of your event, which will be a reflection of your style and personality. We take your vision to the next level by executing every detail surrounding your special occasion.
                     </p>
                     <h4>What we offer</h4>
                     <ul class="list-unstyled">
-                        <li>Overall event design</li>
-                        <li>Furniture designs and table settings</li>
-                        <li>Floor plan with table number assignment</li>
-                        <li>Floral arrangements</li>
-                        <li>Event Lighting</li>
-                        <li>Décor budgeting</li>
                         <li>Assist in creation of event invitations and branding</li>
+                        <li>Floor plan with table number assignment</li>
+                        <li>Furniture designs and table settings</li>
+                        <li>Overall event design</li>
+                        <li>Floral arrangements</li>
+                        <li>Décor budgeting</li>
+                        <li>Event Lighting</li>
+                        <li>.</li>
+                        <li>.</li>
                     </ul>
                 </div><!--service box-->
             </div><!--col-->
@@ -488,19 +490,21 @@
                 <div class="services-box wow animated fadeIn" data-wow-delay="0.6s">
                     <h3 class="services-title">DAY-OF-EVENT</h3>
                     <!-- <i class="ion-ios-gear-outline icon-big-round"></i> -->
-                    <p style="font-size: 16px;">
-                        You have done all the planning; now let us help you finalize the details so you can enjoy your special day. With our expertise and knowledge, we will handle and execute all the details and logistics on the day of the event by coordinating with all the vendors needed and agreed with during your planning process.
+                    <p>
+                        You have done all the planning; now let us help you finalize the details so you can enjoy your special day. With our expertise and knowledge, we will handle and execute all the details and logistics on the day of your event, by coordinating and managing all the vendors & parties involved during your planning process.
                     </p>
                     <h4>What we offer</h4>
                     <ul class=" list-unstyled">
-                        <li>Start coordination 1 week prior to event</li>
-                        <li>Meeting at the venue to review event details</li>
-                        <li>Review all vendor contracts</li>
-                        <li>Event site plan / design layout</li>
-                        <li>Create and develop wedding day timeline with all vendors</li>
-                        <li>Follow up with all vendors before the event to ensure everyone involved understand their role for that day</li>
-                        <li>Check in all vendors upon arrival</li>
+                        <li>Ensure all vendors understand their role for the day</li>
+                        <li>Commence coordination one week before event</li>
+                        <li>Manage vendors' timelines for wedding day</li>
                         <li>Full execution of venue décor and set up</li>
+                        <li>Review event details at wedding venue</li>
+                        <li>Check in on all vendors upon arrival</li>
+                        <li>Event-site plan / design layout</li>
+                        <li>Review all vendor contracts</li>
+                        <li>.</li>
+
                     </ul>
                 </div><!--service box-->
             </div><!--col-->

@@ -48,7 +48,7 @@
     }
 
     .list-unstyled {
-      font-size: 15px;
+      font-size: 13px;
     }
 
     /*End custom settings*/
@@ -59,6 +59,7 @@
 
     a {
       text-decoration: none;
+      color: #b1d3d2;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
@@ -146,11 +147,12 @@
     }
 
     .sub-text {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 300;
       margin-bottom: 60px;
       margin-top: 25px;
       line-height: 33px;
+      text-align: justify;
     }
 
     .center-border-line {
@@ -208,8 +210,8 @@
       font-family: 'AmericanTypewriter', "Poppins", sans-serif;
       text-transform: uppercase;
       font-size: 14px;
-      letter-spacing: 0px;
-      font-weight: 300;
+      letter-spacing: 0.5px;
+      font-weight: normal;
     }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
       color: rgb(177,211,210);
@@ -649,9 +651,10 @@ SERVICES SECTION
 }
 .services-box h3 {
   text-transform: uppercase;
-  color: #000;
+  color: #b1d3d2;
   margin-bottom: 30px;
   font-weight: 700;
+  font-size: 20px;
 }
 .services-box i.icon-big-round {
   display: block;
@@ -673,7 +676,7 @@ SERVICES SECTION
   border-radius: 50%;
 }
 .services-box p {
-  font-size: 13px;
+  font-size: 16px;
 }
 .services-box h4 {
   text-transform: uppercase;
