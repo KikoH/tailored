@@ -28,7 +28,7 @@ ActiveAdmin.register Portfolio do
 		f.inputs "Portfolios" do
 
 			f.input :title
-			f.input :subtitle
+			f.input :subtitle, :label => 'Location'
 			f.input :category, :label => 'Category', :as => :select, :collection => ["weddings", "birthdays", "custom"]
 			f.input :description
 			f.input :main_image, label: "Main Image",
