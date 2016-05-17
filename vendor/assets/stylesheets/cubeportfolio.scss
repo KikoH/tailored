@@ -2644,7 +2644,7 @@
   margin: auto;
   z-index: 2;
   /* @editable properties */
-  background: asset-url('cbp-loading-popup.gif') no-repeat scroll center center #0D0D0D;
+  background: url('https://s3.amazonaws.com/tailored/cbp-loading.gif') no-repeat scroll center center #0D0D0D;
   border: 1px solid rgba(79, 80, 79, 0.3);
   border-radius: 3px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=71)";
