@@ -9,6 +9,6 @@ class ContactMailer < ActionMailer::Base
 		@can_publish = can_publish
 		@held = held
 		# Mail it to/from/subject
-		mail(to: 'info@tailord.com', from: @email, subject: 'Message from ' + @name)
+		mail(to: 'info@tailordevents', from: @email, subject: 'Message from ' + @name)
 	end
 end
