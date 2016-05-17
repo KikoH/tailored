@@ -131,14 +131,14 @@
                     <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
                         All (<div class="cbp-filter-counter"></div> items)
                     </div>
+                    <div data-filter=".social" class="cbp-filter-item">
+                        Social Events (<div class="cbp-filter-counter"></div> items)
+                    </div>
                     <div data-filter=".weddings" class="cbp-filter-item">
                         Weddings (<div class="cbp-filter-counter"></div> items)
                     </div>
-                    <div data-filter=".birthdays" class="cbp-filter-item">
-                        Birthdays (<div class="cbp-filter-counter"></div> items)
-                    </div>
-                    <div data-filter=".custom" class="cbp-filter-item">
-                        Custom (<div class="cbp-filter-counter"></div> items)
+                    <div data-filter=".projects" class="cbp-filter-item">
+                        Projects (<div class="cbp-filter-counter"></div> items)
                     </div>
                 </div>
             </div>
@@ -533,7 +533,7 @@
                                     <%= testimony.testimonial %>
                                 </p>
                                 <img src="<%= testimony.image_url(:thumb)%>" alt="">
-                                <h6><%= testimony.name %> - <span class="colored-text"><%= testimony.company %></span></h6>
+                                <h6><%= testimony.name %> <span class="colored-text"><%= testimony.company %></span></h6>
                             </div>
                         </li><!--Single slide li-->
                         <% end %>
