@@ -29,7 +29,7 @@ ActiveAdmin.register Portfolio do
 
 			f.input :title
 			f.input :subtitle, :label => 'Location'
-			f.input :category, :label => 'Category', :as => :select, :collection => ["weddings", "birthdays", "custom"]
+			f.input :category, :label => 'Category', :as => :select, :collection => ["social", "weddings", "projects"]
 			f.input :description
 			f.input :main_image, label: "Main Image",
 			as: :file, :hint => image_tag(f.object.main_image.url(:thumb))
