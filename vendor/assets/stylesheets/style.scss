@@ -1661,6 +1661,11 @@ HOME V2 - PARALLAX BACKGROUND WITH FLEX TEXT SLIDER
   .socials li {
     padding: 0 15px;
   }
+
+  .center-title {
+      font-size: 27px;
+      line-height: 2.5;
+    }
 }
 @media (max-width: 568px) {
   #home-slider.flexslider ul.slides li p {
