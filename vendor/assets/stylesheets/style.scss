@@ -2,7 +2,7 @@
     Created on : 10 Apr, 2015, 1:08:57 PM
     Author     : Design_mylife
     Project    : Bavely - Classy One page Theme
-    */
+*/
     @import url(https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300);
     @font-face {
       font-family: 'CursiveFlourish';
@@ -13,6 +13,7 @@
       font-family: 'AmericanTypewriter';
       src: font-url('AmericanTypewriterRegular.ttf');
     }
+
     /************base*************/
     body {
       color: #777;
@@ -1667,6 +1668,7 @@ HOME V2 - PARALLAX BACKGROUND WITH FLEX TEXT SLIDER
       line-height: 2.5;
     }
 }
+
 @media (max-width: 568px) {
   #home-slider.flexslider ul.slides li p {
     font-size: 30px;
