@@ -61,6 +61,13 @@
       color: transparent; 
     }
 
+    .testi-slider-item {
+      p {
+          height: 80px;
+          overflow: auto;
+        }
+    }
+
     /*End custom settings*/
 
     .introone {
