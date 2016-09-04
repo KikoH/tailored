@@ -23,7 +23,7 @@ ActiveAdmin.register Intro do
 	form do |f|
 		f.inputs "Intros" do
 			f.input :title
-			f.input :description
+			f.input :description, :input_html => { :maxlength => 50 }	
 			f.input :image, label: "Image",
 			as: :file, :hint => image_tag(f.object.image.url(:thumb))
 			f.input :scroll, :label => 'Scroll to section', :as => :select, :collection => ["work", "about", "contact"], :selected => "about"

@@ -13,6 +13,17 @@ ActiveAdmin.register Testimonial do
 		end
 	end
 
+	form do |f|
+		f.inputs "Intros" do
+			f.input :name
+			f.input :testimonial, :input_html => { :maxlength => 120 }
+			f.input :image, label: "Image",
+			as: :file, :hint => image_tag(f.object.image.url(:thumb))
+			f.input :company
+		end
+		f.actions
+	end
+
 	config.filters = false
 
 end
