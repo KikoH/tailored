@@ -755,6 +755,9 @@ TESTIMONIALS
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
+  @media screen and (max-width: 776px) {
+    line-height: 24px;
+  }
 }
 .testimonials .flex-direction-nav a {
   text-decoration: none;
